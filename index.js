@@ -23,20 +23,17 @@ const returnFirstTwoDrivers = function(drivers) {
     };
   }
   
-  // Example usage:
   const fareDoubler = createFareMultiplier(2);
-  const fareMultiplierBy2 = createFareMultiplier(2);
+  const fareTripler = createFareMultiplier(3);
   
   // Applying the created functions to calculate fares
-  const originalFare = 20;
+  const originalFare = 40;
   
-  const fareQuadrupled = fareDoubler(originalFare);
-  //const fareDoubled = fareMultiplierBy2(originalFare);
+  const fareDoubled = fareDoubler(originalFare);
+  const fareTripled = fareTripler(originalFare);
+
   
-  console.log(fareQuadrupled); // Output: 80 (20 * 4)
-  //console.log(fareDoubled);    // Output: 40 (20 * 2)
+  console.log(fareDoubled);
+  console.log(fareTripled);    
   
-  
-  //console.log(firstTwoDrivers);
-  //console.log(lastTwoDrivers); // Output: ["Amari", "Mo"]
-  
+ 
